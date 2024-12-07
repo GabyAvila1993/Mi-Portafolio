@@ -1,0 +1,555 @@
+/* ------------------------------------------------------------------------------------ */
+/*                                CSS INICIO Y DARKMODE                                 */
+/* ------------------------------------------------------------------------------------ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: rgb(121, 166, 226);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* MODO OSCURO */
+
+/* Estilos para el botón */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgb(78, 134, 207);
+    color: #dce5e6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: rgb(58, 114, 187);
+    transform: scale(1.05);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background: rgb(33, 48, 69);
+    color: #dce5e6;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p {
+    color: #dce5e6;
+}
+
+/* Ajustes para los contenedores */
+body.dark-mode .grid-container,
+body.dark-mode .project-card,
+body.dark-mode .certification-card {
+    background: rgb(54, 94, 145);
+    border-color: rgb(78, 134, 207);
+    color: #dce5e6;
+}
+
+/* Ajustes para los enlaces */
+body.dark-mode a {
+    color: rgb(121, 166, 226);
+}
+
+body.dark-mode a:hover {
+    color: rgb(78, 134, 207);
+}
+
+/* Responsividad del botón */
+@media (max-width: 768px) {
+    #dark-mode-toggle {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #dark-mode-toggle {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+/*                           CSS HEADER MENU DE NAVEGACIÓN                              */
+/* ------------------------------------------------------------------------------------ */
+
+/* Estilos generales */
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4375b6;
+    color: white;
+    padding: 10px 0;
+    z-index: 100;
+    
+}
+
+body {
+    padding-top: 60px; /* Ajusta según la altura del navbar */
+}
+
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-izquierdo {
+    display: flex;
+    gap: 10px;
+}
+
+.language-btn,
+.theme-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(121, 166, 226);
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-btn:hover,
+.theme-btn:hover {
+    background-color: rgb(46, 86, 218);
+}
+
+/* Menú derecho (desktop) */
+.menu-derecho {
+    display: flex;
+}
+
+.lista {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.lista li a {
+    text-decoration: none;
+    color: #063349cb;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.lista li a:hover {
+    color: white;
+}
+
+/* Botón hamburguesa (móvil) */
+.hamburguesa {
+    display: none;
+    /* Oculto por defecto */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+    /* Para asegurar que esté encima */
+}
+
+.hamburguesa span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu-derecho {
+        position: fixed;
+        top: 60px;
+        /* Ajustar debajo del navbar */
+        right: 0;
+        width: 200px;
+        height: 250px;
+        background-color: #4375b6;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu-derecho.mostrar {
+        transform: translateX(0);
+        /* Mostrar menú al activar */
+    }
+
+    .lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hamburguesa {
+        display: flex;
+        /* Visible en móviles */
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+/*                                     SOBRE MI                                         */
+/* ------------------------------------------------------------------------------------ */
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+main {
+    padding-top: 80px; /* Altura suficiente para despejar el navbar */
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
+    gap: 20px;
+    max-width: 950px;
+    background-color: rgb(78, 134, 207); /* Fondo blanco */
+    border: 3px solid #ccc; /* Borde sólido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); /* Sombra 3D */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Fotografía */
+.foto img {
+    width: 100%; /* Imagen ocupa todo el ancho disponible */
+    height: auto;
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+/* Nombre */
+.nombre h1 {
+    font-size: 24px;
+    text-align: center; /* Centrar texto */
+    color: #333;
+}
+
+/* Descripción */
+.descripcion p {
+    font-size: 16px;
+    text-align: justify; /* Alinear texto a la izquierda */
+    color: #dce5e6;
+    line-height: 1.6;
+}
+
+/* Diseño responsive para pantallas grandes */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr; /* Dos columnas en pantallas grandes */
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    .foto {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2; /* Ocupa dos filas */
+    }
+
+    .nombre {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .descripcion {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+/*                                    PROYECTOS                                         */
+/* ------------------------------------------------------------------------------------ */
+
+
+h2 {
+    text-align: center;
+    margin-top: -80px;
+    font-size: 2rem;
+    padding: 70px;
+    color: #333;
+}
+
+
+.projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.project-grid {
+    display: grid;
+    gap: 30px;
+    text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    /* Adaptable */
+    justify-items: center;
+
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    background: rgb(78, 134, 207);
+    width: 500px;
+    max-width: 9000px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 5);
+    text-align: left;
+}
+
+.project-card img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.technologies img {
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+}
+
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.technologies img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/*                          ESTUDIOS Y CERTIFICACIONES                                  */
+/* ------------------------------------------------------------------------------------ */
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 20px;
+    color: #333;
+}
+
+.certifications {
+    padding: 20px;
+}
+
+
+.certification-grid {
+    display: grid;
+    gap: 20px;
+    text-align: justify;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    justify-items: center;
+}
+
+
+.certification-card {
+    border-radius: 15px;
+    padding: 15px;
+    background: rgb(78, 134, 207);
+    width: 100%; 
+    max-width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    text-align: left;
+}
+
+
+.certification-card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .certification-card {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+.certification-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/*                                   CONTACTO                                           */
+/* ------------------------------------------------------------------------------------ */
+
+/* Estilo para el encabezado h2 */
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 20px;
+    color: #333;
+}
+
+/* Estilo para el párrafo de la pregunta */
+.pregunta {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: #333;
+}
+
+/* Estilo del footer */
+.footer {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #f8f8f8; */
+}
+
+/* Estilo para los enlaces dentro del footer */
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaciado entre los elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes dentro de los enlaces */
+.links a img {
+    width: 40px;
+    /* Tamaño de las imágenes */
+    height: 40px;
+    transition: transform 0.3s ease;
+    /* Efecto de transición al pasar el mouse */
+}
+
+.links a img:hover {
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+/* Estilo para el botón de descarga */
+.boton-descargar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-descargar button:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .links {
+        flex-direction: column;
+        /* Los elementos se apilan verticalmente */
+        gap: 15px;
+        /* Menor espacio entre los elementos */
+    }
+
+    .links a img {
+        width: 30px;
+        /* Reducir el tamaño de las imágenes en pantallas pequeñas */
+        height: 30px;
+    }
+
+    .boton-descargar button {
+        font-size: 1.1rem;
+        /* Ajuste en el tamaño del texto */
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 5px;
+    }
+
+    .links a img {
+        width: 25px;
+        /* Reducir aún más el tamaño de las imágenes */
+        height: 25px;
+    }
+
+    .boton-descargar button {
+        font-size: 1rem;
+        /* Asegurar un tamaño adecuado del texto */
+        padding: 10px 20px;
+    }
+}

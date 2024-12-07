@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!--                                  MENU NAVEGACION                                    -->
+    <!-- ----------------------------------------------------------------------------------- -->
+    <header class="encabezado">
+        <nav class="navegacion">
+            <!-- Botones del lado izquierdo -->
+            <div class="menu-izquierdo">
+                <button class="language-btn" data-text data-es="Español" data-en="Spanish" >Español</button>
+                <button class="theme-btn"  data-text data-es="Modo Oscuro" data-en="Dark Mode" >Modo Oscuro</button>
+            </div>
+    
+            <!-- Botón de menú hamburguesa para móviles -->
+            <button class="hamburguesa" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <!-- Menú de navegación -->
+            <div class="menu-derecho">
+                <ul class="lista">
+                    <li><a href="#sobre_mi" data-text data-es="Sobre mí" data-en="About Me">Sobre mí</a></li>
+                    <li><a href="#proyectos" data-text data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                    <li><a href="#certificados" data-text data-es="Estudios y Certificados" data-en="Studies & Certificates">Estudios y Certificados</a></li>
+                    <li><a href="#contacto" data-text data-es="Contacto" data-en="Contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!--                                       SOBRE MI                                      -->
+    <!-- ----------------------------------------------------------------------------------- -->
+    <main>
+        <section id="sobre_mi" class="seccion1">
+            <h2 data-text data-es="Sobre Mi" data-en="About Me">Sobre Mi</h2>
+            <div class="grid-container">
+                <!-- Fotografía -->
+                <div class="foto">
+                    <img src="static/assets/foto_personal.png" alt="Foto de perfil">
+                </div>
+                <!-- Nombre -->
+                <div class="nombre">
+                    <h1 data-text data-es="Hola, soy Gabriel Avila" data-en="Hello, I'm Gabriel Avila">Hola, soy Gabriel Avila
+                    </h1>
+                </div>
+                <!-- Descripción -->
+                <div class="descripcion">
+                    <p data-text
+                        data-es="Estudiante de Desarrollo de Software con experiencia en el uso de tecnologías como Python, Flask, HTML, CSS, JavaScript y SQL. Actualmente, estoy trabajando en proyectos que combinan creatividad y funcionalidad, como una red social para amantes del vino que fomenta el turismo enológico y las conexiones entre usuarios.
+
+            Estoy enfocado en adquirir habilidades avanzadas en frameworks como React y Node.js, además de profundizar en áreas clave como comunicación y redes, sistemas operativos y modelado de software.
+            
+            Mi objetivo es construir aplicaciones que no solo sean eficientes y funcionales, sino también impacten positivamente en la vida de los usuarios. Estoy abierto a colaborar en proyectos desafiantes que me permitan seguir creciendo como profesional en el mundo del desarrollo de software."
+                        data-en="I am a Software Development student with experience in using technologies such as Python, Flask, HTML, CSS, JavaScript, and SQL. Currently, I am working on projects that combine creativity and functionality, such as a social network for wine enthusiasts that promotes wine tourism and fosters connections among users.
+
+                I am focused on acquiring advanced skills in frameworks like React and Node.js, as well as deepening my knowledge in key areas such as communication and networks, operating systems, and software modeling.
+                
+                My goal is to build applications that are not only efficient and functional but also have a positive impact on users' lives. I am open to collaborating on challenging projects that allow me to continue growing as a professional in the field of software development..">
+                        Estudiante de Desarrollo de Software con experiencia en el uso de tecnologías como Python,
+                        Flask, HTML,
+                        CSS, JavaScript y SQL. Actualmente, estoy trabajando en proyectos que combinan creatividad y
+                        funcionalidad, como una red social para amantes del vino que fomenta el turismo enológico y las
+                        conexiones entre usuarios.
+
+                        Estoy enfocado en adquirir habilidades avanzadas en frameworks como React y Node.js, además de
+                        profundizar en áreas clave como comunicación y redes, sistemas operativos y modelado de
+                        software.
+
+                        Mi objetivo es construir aplicaciones que no solo sean eficientes y funcionales, sino también
+                        impacten
+                        positivamente en la vida de los usuarios. Estoy abierto a colaborar en proyectos desafiantes que
+                        me
+                        permitan seguir creciendo como profesional en el mundo del desarrollo de software.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!--                                    PROYECTOS                                        -->
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <section id="proyectos" class="seccion">
+        <h2 data-text data-es="Mis Proyectos" data-en="My Projects">Mis Proyectos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="static/assets/VinoVerse paquetes turisticos.png" alt="Vino Verse">
+                <h3 data-text data-es="Vino Verse (un mundo por conocer)" data-en="Vino Verse  (a world to know)">
+                    Vino Verse (un mundo por conocer)</h3>
+
+                <p data-text class="description"
+                    data-es="Presentamos una aplicación web avanzada, diseñada para conectar personas interesadas en el mundo del vino y el turismo. Esta plataforma multifuncional incluye características similares a las de una red social, permitiendo interacciones entre usuarios, además de un sistema de comercio electrónico que facilita la compra de productos relacionados con la enología y el turismo. La aplicación incluye opciones para gestionar cuentas de usuario, interacciones sociales como seguir o agregar amigos, crear grupos y mucho más. Además, se integra con la posibilidad de hacer reservas en bodegas y contratar paquetes turísticos. Con un diseño moderno y optimizado, la app ofrece una experiencia completa, accesible y fácil de usar, garantizando la interacción entre los usuarios y el acceso a servicios relacionados con el vino y el turismo."
+                    class="description"
+                    data-en="We present an advanced web application, designed to connect people interested in the world of wine and tourism. This multifunctional platform includes features similar to those of a social network, allowing interactions between users, as well as an e-commerce system that facilitates the purchase of products related to oenology and tourism. The app includes options to manage user accounts, social interactions such as following or adding friends, creating groups, and more. In addition, it is integrated with the possibility of making reservations in wineries and contracting tourist packages. With a modern and optimized design, the app offers a complete, accessible and easy-to-use experience, guaranteeing interaction between users and access to services related to wine and tourism"
+                    class="description">
+                    Presentamos una aplicación web avanzada, diseñada para conectar personas interesadas en el mundo
+                    del vino y el turismo. Esta plataforma multifuncional incluye características similares a las de
+                    una red social, permitiendo interacciones entre usuarios, además de un sistema de comercio
+                    electrónico que facilita la compra de productos relacionados con la enología y el turismo. La
+                    aplicación incluye opciones para gestionar cuentas de usuario, interacciones sociales como
+                    seguir o agregar amigos, crear grupos y mucho más. Además, se integra con la posibilidad de
+                    hacer reservas en bodegas y contratar paquetes turísticos. Con un diseño moderno y optimizado,
+                    la app ofrece una experiencia completa, accesible y fácil de usar, garantizando la interacción
+                    entre los usuarios y el acceso a servicios relacionados con el vino y el turismo.</p>
+
+
+                <div class="technologies">
+                    <img src="static/assets/logo_python.png" alt="Python">
+                    <img src="static/assets/html.png" alt="HTML">
+                    <img src="static/assets/css.png" alt="CSS">
+                    <img src="static/assets/sql.png" alt="SQL">
+                    <img src="static/assets/javaScript.png" alt="JavaScript">
+                    <a href="https://github.com/GabyAvila1993/VinoVerse" target="_blank">
+                        <img src="static/assets/gitHub.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="static/assets/Copa America III.png" alt="Copa America">
+                <h3 data-text data-es="Copa America" data-en="Cup America">Copa America</h3>
+
+                <p data-text class="description"
+                    data-es="Desarrollamos un portal dedicado exclusivamente a la Copa América, ofreciendo una plataforma de última generación que cubre todos los aspectos del torneo. Con noticias de última hora, análisis detallados de expertos, y resultados en tiempo real, la experiencia se completa con gráficos interactivos y perfiles de equipos y jugadores. Estos perfiles permiten comparar estadísticas de rendimiento de los futbolistas de manera visual y accesible. El portal fue creado sobre una arquitectura sólida basada en Flask, garantizando una experiencia fluida y optimizada para los usuarios, cumpliendo con su objetivo de ser una fuente integral de información para los aficionados del fútbol."
+                    class="description"
+                    data-en="We developed a portal dedicated exclusively to the Copa America, offering a state-of-the-art platform that covers all aspects of the tournament. With breaking news, detailed expert analysis, and real-time results, the experience is complete with interactive graphics and profiles of teams and players. These profiles allow you to compare performance statistics of the players in a visual and accessible way. The portal was built on a solid architecture based on Flask, ensuring a smooth and optimized experience for users, fulfilling its goal of being a comprehensive source of information for football fans."
+                    class="description">Desarrollamos un portal dedicado exclusivamente a la Copa América,
+                    ofreciendo una plataforma de última generación que cubre todos los aspectos del torneo. Con
+                    noticias de última hora, análisis detallados de expertos, y resultados en tiempo real, la
+                    experiencia se completa con gráficos interactivos y perfiles de equipos y jugadores. Estos
+                    perfiles permiten comparar estadísticas de rendimiento de los futbolistas de manera visual y
+                    accesible. El portal fue creado sobre una arquitectura sólida basada en Flask, garantizando una
+                    experiencia fluida y optimizada para los usuarios, cumpliendo con su objetivo de ser una fuente
+                    integral de información para los aficionados del fútbol.</p>
+
+                <div class="technologies">
+                    <img src="static/assets/logo_python.png" alt="Python">
+                    <img src="static/assets/html.png" alt="HTML">
+                    <img src="static/assets/css.png" alt="CSS">
+                    <img src="static/assets/sql.png" alt="SQL">
+                    <a href="https://github.com/GabyAvila1993/Copa_America" target="_blank">
+                        <img src="static/assets/gitHub.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+
+            <!-- DE ACA HASTA ABAJO SE AGREGAN LOS PROYECTOS -->
+            <div class="project-card">
+                <img src="static/assets/pizzeria.png" alt="Pizzería">
+                <h3 data-text data-es="Pizzería Donatello" data-en="Donatello Pizzeria">Pizzería Donatello</h3>
+
+                <p data-text class="description" data-es="Este pryecto Busca desarrollar una aplicación web para gestionar pedidos en una pizzería,
+                    mejorando la eficiencia operativa y la experiencia del cliente. Utilizando Flask como backend y
+                    HTML/CSS para la interfaz, la aplicación permitirá registrar, visualizar y eliminar pedidos de
+                    manera sencilla y eficiente" class="description" data-en="This project seeks to develop a web application to manage orders in a pizzeria,
+                    improving operational efficiency and customer experience. Using Flask as a backend and
+                    HTML/CSS for the interface, the application will allow you to register, view and delete orders from
+                    simple and efficient way" class="description">Este pryecto Busca desarrollar una aplicación web
+                    para gestionar pedidos en una pizzería,
+                    mejorando la eficiencia operativa y la experiencia del cliente. Utilizando Flask como backend y
+                    HTML/CSS para la interfaz, la aplicación permitirá registrar, visualizar y eliminar pedidos de
+                    manera sencilla y eficiente</p>
+                <div class="technologies">
+                    <img src="static/assets/logo_python.png" alt="Python">
+                    <img src="static/assets/html.png" alt="HTML">
+                    <img src="static/assets/css.png" alt="CSS">
+                    <img src="static/assets/sql.png" alt="SQL">
+                    <a href="https://github.com/GabyAvila1993/Pizzeria" target="_blank">
+                        <img src="static/assets/gitHub.png" alt="GitHub">
+                    </a>
+
+
+                </div>
+            </div>
+            <!-- DE ACA HASTA ARRIBA SE AGREGAN LOS PROYECTOS -->
+            <div class="project-card">
+                <img src="static/assets/dengue I.png" alt="Proyecto Dengue">
+                <h3 data-text data-es="Dengue" data-en="Dengue Fever">Dengue</h3>
+
+                <p data-text class="description" data-es="Este proyecto busca desarrollar una aplicacion web para gestionar y analizar datos
+                    epidemiológicos relacionados con el dengue en Argentina, contribuyendo a su control y
+                    prevención. Utilizando Flask como Backend, la aplicación permitirá registrar, visualizar y
+                    actualizar información de pacientes, identificar áreas de riesgo, y generar reportes
+                    estadísticos para mejorar la toma de desiciones en medidas de control y prevención de la
+                    enfermedad" class="description" data-en="This project seeks to develop a web application to manage and analyze data
+                    epidemiological problems related to dengue in Argentina, contributing to its control and
+                    prevention. Using Flask as the Backend, the application will allow you to record, view and
+                    Update patient information, identify risk areas, and generate reports
+                    statistical measures to improve decision-making in measures to control and prevent the
+                    illness" class="description">Este proyecto busca desarrollar una aplicacion web para gestionar y
+                    analizar datos
+                    epidemiológicos relacionados con el dengue en Argentina, contribuyendo a su control y
+                    prevención. Utilizando Flask como Backend, la aplicación permitirá registrar, visualizar y
+                    actualizar información de pacientes, identificar áreas de riesgo, y generar reportes
+                    estadísticos para mejorar la toma de desiciones en medidas de control y prevención de la
+                    enfermedad</p>
+                <div class="technologies">
+                    <img src="static/assets/logo_python.png" alt="Python">
+                    <img src="static/assets/html.png" alt="HTML">
+                    <img src="static/assets/css.png" alt="CSS">
+                    <img src="static/assets/sql.png" alt="SQL">
+                    <a href="https://github.com/GabyAvila1993/Dengue" target="_blank">
+                        <img src="static/assets/gitHub.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!--                          ESTUDIOS Y CERTIFICACIONES                                 -->
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <section id="certificados" class="certifications">
+        <h2 data-text data-es="Estudios y Certificaciones" data-en="Studies and Certifications">Estudios y Certificaciones</h2>
+        <div class="certification-grid">
+            <div class="certification-card">
+                <img src="static/assets/carrera desarrollo de software.png" alt="Imagen del certificado">
+                <h3 data-text data-es="Técnico Superior en Desarrollo de Software"
+                    data-en="Senior Technician in Software Development">Técnico Superior en Desarrollo de Software
+                </h3>
+                <p data-text data-es="Cursando la carrera en Segundo Año" data-en="Studying in the Second Year">
+                    Cursando la carrera en Segundo Año</p>
+
+            </div>
+            <div class="certification-card">
+                <img src="static/assets/certificado_asertividad,png.jpg" alt="Imagen del certificado">
+                <h3 data-text data-es="Ckaves de Asertividad" data-en="Keys to Assertiveness">Claves de Asertividad
+                </h3>
+                <p data-text data-es="Finalizado" data-en="Finalized">Finalizado</p>
+            </div>
+
+            <div class="certification-card">
+                <img src="static/assets/scrum_avanzado.png" alt="Imagen del certificado">
+                <h3 data-text data-es="Curso de Scrum Avanzado" data-en="Advanced Scrum Course">Curso de Scrum Avanzado
+                </h3>
+                <p data-text data-es="Finalizado" data-en="Finalized">Finalizado</p>
+            </div>
+
+            <div class="certification-card">
+                <img src="static/assets/Colabaracion_equipos.png" alt="Imagen del certificado">
+                <h3 data-text data-es="Curso de Gestión de equipos" data-en="Team Management Course">Curso de Gestión de
+                    equipos</h3>
+
+                <p data-text data-es="Finalizado" data-en="Finalized">Finalizado</p>
+            </div>
+
+            <div class="certification-card">
+                <img src="static/assets/certificado_sql.png" alt="Imagen del certificado">
+                <h3 data-text data-es="Curso de W3Schools" data-en="W3Schools SQL Course">Curso de W3Schools de SQL
+                </h3>
+                <p data-text data-es="Finalizado" data-en="Finalized">Finalizado</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!--                                 CONTACTO                                            -->
+    <!-- ----------------------------------------------------------------------------------- -->
+
+
+
+
+    <footer id="contacto" class="footer">
+        <h2 data-text data-es="Contacto" data-en="Contact">Contacto</h2>
+        <p class="pregunta" data-text data-es="¿Quieres trabajar conmigo? ¡Contáctame!"
+            data-en="Do you want to work with me? Contact me!" class="pregunta">¿Quieres trabajar conmigo? ¡Contáctame!
+        </p>
+        <section class="links">
+            <a href="https://github.com/GabyAvila1993" target="_blank">
+                <img src="static/assets/gitHub.png" alt="Perfil GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/cristiangabrielavila/" target="_blank">
+                <img src="static/assets/linkedln.png" alt="Perfil linkedin">
+            </a>
+
+            <a href="mailto:avila.gabi@outlook.com" target="_blank">
+                <img src="static/assets/correo negro.png" alt="Correo">
+            </a>
+
+            <a href="static/assets/Curriculum 10-02-24 azul.pdf" download="Curriculum" class="boton-descargar">
+                <button data-text data-es="Descargar Curriculum" data-en="Download Curriculum">Descargar Curriculum</button>
+            </a>
+        </section>
+    </footer>
+
+    
+    <script src="static/js/haburguesa.js"></script>
+    <script src="static/js/botones.js"></script>
+    <script src="static/js/darkMode.js"></script>
+</body>
+</html>
