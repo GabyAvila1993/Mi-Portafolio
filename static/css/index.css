@@ -340,12 +340,12 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .technologies img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -360,6 +360,10 @@ h2 {
 
     .project-card img {
         width: 100%;
+    }
+    .technologies img{
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -473,18 +477,18 @@ h2 {
 .links {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     /* Espaciado entre los elementos */
-    flex-wrap: wrap;
+    flex-wrap:inherit;
     /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Estilo para las imágenes dentro de los enlaces */
 .links a img {
-    width: 40px;
+    width: 30px;
     /* Tamaño de las imágenes */
-    height: 40px;
+    height: 30px;
     transition: transform 0.3s ease;
     /* Efecto de transición al pasar el mouse */
 }
@@ -517,7 +521,7 @@ h2 {
     }
 
     .links {
-        flex-direction: column;
+        flex-direction: row;
         /* Los elementos se apilan verticalmente */
         gap: 15px;
         /* Menor espacio entre los elementos */
