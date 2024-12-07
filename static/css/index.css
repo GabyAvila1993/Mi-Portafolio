@@ -277,6 +277,7 @@ main {
     .foto {
         grid-column: 1 / 2;
         grid-row: 1 / span 2; /* Ocupa dos filas */
+        
     }
 
     .nombre {
@@ -287,6 +288,18 @@ main {
     .descripcion {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .foto {
+        
+        width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+        grid-row: auto; /* Deja que la imagen ocupe solo una fila */
     }
 }
 
